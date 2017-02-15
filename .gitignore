@@ -6,6 +6,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+.idea
+/.idea/
+.idea/workspace.xml
+
 # Runtime data
 pids
 *.pid
@@ -57,6 +61,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-/.idea/
-.idea/workspace.xml
