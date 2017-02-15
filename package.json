@@ -1,0 +1,24 @@
+{
+  "name": "pdfpy",
+  "version": "1.0.0",
+  "description": "Package to convert html to pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keerthi16/pdfpy.git"
+  },
+  "keywords": [
+    "pdf",
+    "html",
+    "python"
+  ],
+  "author": "Keerthi Niranjan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keerthi16/pdfpy/issues"
+  },
+  "homepage": "https://github.com/keerthi16/pdfpy#readme"
+}
