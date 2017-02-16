@@ -1,11 +1,12 @@
 {
   "name": "pdfpy",
-  "version": "1.0.2",
+  "version": "1.0.8",
   "description": "Package to convert html to pdf",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "./startup.sh"
+    "build": "sh startup.sh",
+    "postinstall": "postinstall-build \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/keerthi16/pdfpy/issues"
   },
-  "homepage": "https://github.com/keerthi16/pdfpy#readme"
+  "homepage": "https://github.com/keerthi16/pdfpy#readme",
+  "dependencies": {
+    "postinstall-build": "^2.1.3"
+  }
 }
