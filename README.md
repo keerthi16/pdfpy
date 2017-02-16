@@ -3,79 +3,54 @@
 Convert HTML to PDF simple and fast
 
 ```
-npm install pdfpy
+sudo npm install pdfpy
 ```
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Install python
-```
-
-```
-pip install pdfkit
-```
-
-and your good to go
-
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
+## install latest node and npm
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### Example
+
+```
+var pdfpy = require('pdfpy');
+
+var input = "./input.html";
+var output = "./out.html";
+
+pdfpy(input, output, function(err, res) {
+    if(err) throw err
+
+    console.log("successful");
+});
+```
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
-
-## Contributing
-
-
-## Versioning
-
+pdfkit 0.6.1 python package
 
 ## Authors
+
+```
+KiKe ( kike.co.in )
+
+Keerthi Niranjan <keerthiniranjan16@gmail.com> <keerthi@kike.co.in>
+Kiran Niranjan <kiranleo1992@gmail.com> <kiran@kike.co.in>
+
+```
 
 
 ## License
@@ -84,6 +59,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
 * Inspiration
 * etc
