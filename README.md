@@ -1,5 +1,5 @@
 # HTML to PDF
-
+[![CircleCI](https://circleci.com/gh/keerthi16/pdfpy.svg?style=svg)](https://circleci.com/gh/keerthi16/pdfpy)
 [![npm version](https://badge.fury.io/js/pdfpy.svg)](https://badge.fury.io/js/pdfpy)
 
 Convert HTML to PDF simple and fast
