@@ -1,5 +1,7 @@
 # HTML to PDF
 
+[![npm version](https://badge.fury.io/js/pdfpy.svg)](https://badge.fury.io/js/pdfpy)
+
 Convert HTML to PDF simple and fast
 
 ```
@@ -19,30 +21,35 @@ A step by step series of examples that tell you have to get a development env ru
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
 ```
 
+### Dependency
+
+* Python
+* pdfkit
+* simplejson
+* 
+
 ### Require
 
 ```
 var pdfpy = require('pdfpy');
-
 ```
 
 ### Types (file and url)
 
 ```
-
 //To generate pdf from file
 pdfpy.file()
-
 ```
 
 ```
 //To generate pdf from url
 pdfpy.url()
-
 ```
 
 ### Example
 
+
+#### File
 ```
 var pdfpy = require('pdfpy');
 
@@ -52,6 +59,22 @@ var data = {
     output: "./output.pdf"
 }
 pdfpy.file(data, function(err, res) {
+    if(err) throw err
+
+    if(res) console.log("success")
+});
+```
+
+#### URL
+```
+var pdfpy = require('pdfpy');
+
+var data = {
+    //the key as to be same as below
+    input: "http://google.com",
+    output: "./output.pdf"
+}
+pdfpy.url(data, function(err, res) {
     if(err) throw err
 
     if(res) console.log("success")
@@ -95,7 +118,7 @@ pdfkit 0.6.1 python package
 ## Authors
 
 ```
-KiKe ( kike.co.in )
+KiKe [KiKe.co.in](http://kike.co.in)
 
 Keerthi Niranjan <keerthiniranjan16@gmail.com> <keerthi@kike.co.in>
 Kiran Niranjan <kiranleo1992@gmail.com> <kiran@kike.co.in>
