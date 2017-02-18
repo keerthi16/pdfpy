@@ -4,7 +4,7 @@
   "description": "Package to convert html to pdf",
   "main": "pdfpy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "build": "sh startup.sh",
     "postinstall": "postinstall-build \"npm run build\""
   },
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "should": "^11.2.0"
   }
 }
