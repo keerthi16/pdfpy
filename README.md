@@ -14,9 +14,31 @@ These instructions will get you a copy of the project up and running on your loc
 
 A step by step series of examples that tell you have to get a development env running
 
-## install latest node and npm
+## Install latest node and npm
 ```
 https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
+```
+
+### Require
+
+```
+var pdfpy = require('pdfpy');
+
+```
+
+### Types (file and url)
+
+```
+
+//To generate pdf from file
+pdfpy.file()
+
+```
+
+```
+//To generate pdf from url
+pdfpy.url()
+
 ```
 
 ### Example
@@ -24,14 +46,42 @@ https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-di
 ```
 var pdfpy = require('pdfpy');
 
-var input = "./input.html";
-var output = "./out.html";
-
-pdfpy(input, output, function(err, res) {
+var data = {
+    //the key as to be same as below
+    input: "./test.html",
+    output: "./output.pdf"
+}
+pdfpy.file(data, function(err, res) {
     if(err) throw err
 
-    console.log("successful");
+    if(res) console.log("success")
 });
+```
+
+### Using Options
+
+```
+var pdfpy = require('pdfpy');
+
+var data = {
+    //the key as to be same as below
+    input: "./test.html",
+    output: "./output.pdf",
+    options: {
+        'page-size': 'Letter',
+        'margin-top': '0.75in',
+        'margin-right': '0.75in',
+        'margin-bottom': '0.75in',
+        'margin-left': '0.75in',
+    }
+}
+
+pdfpy.file(data, function(err, res) {
+    if(err) throw err
+
+    if(res) console.log("success")
+});
+
 ```
 
 ## Running the tests
