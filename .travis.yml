@@ -1,5 +1,4 @@
 before_install:
-  - apt-get update
   - pip install pdfkit
   - pip install simplejson
 language: node_js
