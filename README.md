@@ -1,5 +1,5 @@
 # HTML to PDF
-[![CircleCI](https://circleci.com/gh/keerthi16/pdfpy.svg?style=svg)](https://circleci.com/gh/keerthi16/pdfpy)
+[![Build Status](https://travis-ci.org/keerthi16/pdfpy.svg?branch=master)](https://travis-ci.org/keerthi16/pdfpy)
 [![npm version](https://badge.fury.io/js/pdfpy.svg)](https://badge.fury.io/js/pdfpy)
 
 Convert HTML to PDF simple and fast
@@ -26,7 +26,6 @@ https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-di
 * Python
 * pdfkit
 * simplejson
-* 
 
 ### Require
 
@@ -116,19 +115,16 @@ Explain how to run the automated tests for this system
 pdfkit 0.6.1 python package
 
 ## Authors
-
-```
 KiKe [KiKe.co.in](http://kike.co.in)
-
+```
 Keerthi Niranjan <keerthiniranjan16@gmail.com> <keerthi@kike.co.in>
 Kiran Niranjan <kiranleo1992@gmail.com> <kiran@kike.co.in>
-
 ```
 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
 
 ## Acknowledgments
 
