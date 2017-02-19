@@ -1,7 +1,4 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
- - rbx-2
+language: node_js
+script: "npm test"
 # uncomment and edit the following line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
