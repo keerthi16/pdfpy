@@ -7,24 +7,12 @@
     "test": "mocha",
     "postinstall": "npmpd"
   },
-  "darwinDependencies": {
-    "run": "sh startup.sh"
-  },
-  "linuxDependencies": {
-    "run": "sh startup.sh"
-  },
-  "sunDependencies": {
-    "run": "sh startup.sh"
-  },
-  "centDependencies": {
-    "run": "sh startup.sh"
-  },
-  "freeBSDependencies": {
-    "run": "sh startup.sh"
-  },
-  "win32Dependencies": {
-    "run": "startup.bat"
-  },
+  "darwinDependencies": "sh startup.sh",
+  "linuxDependencies": "sh startup.sh",
+  "sunDependencies": "sh startup.sh",
+  "centDependencies": "sh startup.sh",
+  "freeBSDependencies": "sh startup.sh",
+  "win32Dependencies": "startup.bat",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keerthi16/pdfpy.git"
