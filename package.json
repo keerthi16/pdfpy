@@ -5,8 +5,25 @@
   "main": "pdfpy.js",
   "scripts": {
     "test": "mocha",
-    "build": "sh startup.sh && startup.bat",
-    "postinstall": "postinstall-build \"npm run build\""
+    "postinstall": "npmpd"
+  },
+  "darwinDependencies": {
+    "postinstall": "sh startup.sh"
+  },
+  "linuxDependencies": {
+    "postinstall": "sh startup.sh"
+  },
+  "sunDependencies": {
+    "postinstall": "sh startup.sh"
+  },
+  "centDependencies": {
+    "postinstall": "sh startup.sh"
+  },
+  "freeBSDependencies": {
+    "postinstall": "sh startup.sh"
+  },
+  "win32Dependencies": {
+    "postinstall": "startup.bat"
   },
   "repository": {
     "type": "git",
@@ -24,6 +41,7 @@
   },
   "homepage": "https://github.com/keerthi16/pdfpy#readme",
   "dependencies": {
+    "npm-platform-dependencies": "0.0.12",
     "postinstall-build": "^2.1.3"
   },
   "devDependencies": {
