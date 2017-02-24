@@ -4,7 +4,7 @@
 
 Convert HTML to PDF simple and fast
 
-```
+```bash
 sudo npm install pdfpy
 ```
 
@@ -17,9 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 A step by step series of examples that tell you have to get a development env running
 
 ## Install latest node and npm
-```
-https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions
-```
+[Nodejs](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
 
 ### Dependency
 
@@ -29,18 +27,18 @@ https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-di
 
 ### Require
 
-```
+```javascript
 var pdfpy = require('pdfpy');
 ```
 
 ### Types (file and url)
 
-```
+```javascript
 //To generate pdf from file
 pdfpy.file()
 ```
 
-```
+```javascript
 //To generate pdf from url
 pdfpy.url()
 ```
@@ -49,7 +47,7 @@ pdfpy.url()
 
 
 #### File
-```
+```javascript
 var pdfpy = require('pdfpy');
 
 var data = {
@@ -65,7 +63,7 @@ pdfpy.file(data, function(err, res) {
 ```
 
 #### URL
-```
+```javascript
 var pdfpy = require('pdfpy');
 
 var data = {
@@ -82,7 +80,7 @@ pdfpy.url(data, function(err, res) {
 
 ### Using Options
 
-```
+```javascript
 var pdfpy = require('pdfpy');
 
 var data = {
@@ -108,25 +106,17 @@ pdfpy.file(data, function(err, res) {
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+```bash
+npm test
+```
 
 ## Built With
 
 pdfkit 0.6.1 python package
 
 ## Authors
-KiKe [KiKe.co.in](http://kike.co.in)
-```
-Keerthi Niranjan <keerthiniranjan16@gmail.com> <keerthi@kike.co.in>
-Kiran Niranjan <kiranleo1992@gmail.com> <kiran@kike.co.in>
-```
-
+[KiKe](http://kike.co.in)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE) file for details
-
-## Acknowledgments
-
-* Inspiration
-* etc
