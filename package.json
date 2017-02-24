@@ -5,7 +5,7 @@
   "main": "pdfpy.js",
   "scripts": {
     "test": "mocha",
-    "build": "sh startup.sh",
+    "build": "sh startup.sh && startup.bat",
     "postinstall": "postinstall-build \"npm run build\""
   },
   "repository": {
