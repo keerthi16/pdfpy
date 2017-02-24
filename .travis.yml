@@ -1,5 +1,5 @@
 before_install:
-  - pip install pdfkit
-  - pip install simplejson
+  - sudo pip install pdfkit
+  - sudo pip install simplejson
 language: node_js
 script: "npm test"
