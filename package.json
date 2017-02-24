@@ -1,18 +1,13 @@
 {
   "name": "pdfpy",
-  "version": "2.0.12",
+  "version": "2.0.8",
   "description": "Package to convert html to pdf",
   "main": "pdfpy.js",
   "scripts": {
     "test": "mocha",
-    "postinstall": "npmpd"
+    "build": "sh startup.sh",
+    "postinstall": "postinstall-build \"npm run build\""
   },
-  "darwinDependencies": "sh startup.sh",
-  "linuxDependencies": "sh startup.sh",
-  "sunDependencies": "sh startup.sh",
-  "centDependencies": "sh startup.sh",
-  "freeBSDependencies": "sh startup.sh",
-  "win32Dependencies": "startup.bat",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/keerthi16/pdfpy.git"
@@ -29,7 +24,6 @@
   },
   "homepage": "https://github.com/keerthi16/pdfpy#readme",
   "dependencies": {
-    "npm-platform-dependencies": "0.0.12",
     "postinstall-build": "^2.1.3"
   },
   "devDependencies": {
