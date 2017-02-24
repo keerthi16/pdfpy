@@ -21,9 +21,9 @@ describe("Agent Test", function () {
             should.not.exist(err);
             should.exist(fs.existsSync(data.output));
             should.exist(res);
-            fs.unlinkSync(data.output)
+            fs.unlinkSync(data.output);
+            done();
         });
-        done();
     });
 
     it("From html file it should create a pdf file", function (done) {
@@ -40,8 +40,8 @@ describe("Agent Test", function () {
             console.log(fs.existsSync(data.output));
             should.exist(res);
             fs.unlinkSync(data.output);
+            done();
         });
-        done();
     });
 
     it("Incorrect path", function (done) {
