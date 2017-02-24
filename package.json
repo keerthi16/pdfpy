@@ -8,22 +8,22 @@
     "postinstall": "npmpd"
   },
   "darwinDependencies": {
-    "postinstall": "sh startup.sh"
+    "run": "sh startup.sh"
   },
   "linuxDependencies": {
-    "postinstall": "sh startup.sh"
+    "run": "sh startup.sh"
   },
   "sunDependencies": {
-    "postinstall": "sh startup.sh"
+    "run": "sh startup.sh"
   },
   "centDependencies": {
-    "postinstall": "sh startup.sh"
+    "run": "sh startup.sh"
   },
   "freeBSDependencies": {
-    "postinstall": "sh startup.sh"
+    "run": "sh startup.sh"
   },
   "win32Dependencies": {
-    "postinstall": "startup.bat"
+    "run": "startup.bat"
   },
   "repository": {
     "type": "git",
