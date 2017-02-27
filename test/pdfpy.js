@@ -7,7 +7,7 @@ var fs = require('fs');
 
 const should = require("should");
 
-describe("Agent Test", function () {
+describe("PDF Python", function () {
 
     it("From url it should create a pdf file", function (done) {
 
@@ -71,6 +71,45 @@ describe("Agent Test", function () {
             should.exist(err);
             should.exist(!fs.existsSync(data.output));
             should.not.exist(res);
+            done();
+        });
+    });
+
+    it("Options", function (done) {
+
+        this.timeout(5000);
+        var data = {
+            input: "./example/example.html",
+            output: "./example.pdf",
+            options: {
+                'page-size': 'A4'
+            }
+        };
+
+        pdf.file(data, function (err, res) {
+            should.not.exist(err);
+            should.exist(res);
+            should.exist(fs.existsSync(data.output));
+            fs.unlinkSync(data.output);
+            done();
+        });
+    });
+
+    it("Options Error", function (done) {
+
+        this.timeout(5000);
+        var data = {
+            input: "./example/example.html",
+            output: "./example.pdf",
+            options: {
+                'pagesize': 'A4'
+            }
+        };
+
+        pdf.file(data, function (err, res) {
+            should.exist(err);
+            should.not.exist(res);
+            should.exist(!fs.existsSync(data.output));
             done();
         });
     });
