@@ -2,6 +2,8 @@ before_install:
   - sudo pip install pdfkit
   - sudo pip install simplejson
 language: node_js
+node_js:
+  - "6"
 script: "npm test"
 os:
   - linux
