@@ -3,3 +3,6 @@ before_install:
   - sudo pip install simplejson
 language: node_js
 script: "npm test"
+os:
+  - linux
+  - osx
