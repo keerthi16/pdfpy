@@ -13,8 +13,8 @@ case $OS in
     cd wkhtmltox
     sudo chown root:root bin/wkhtmltopdf
     sudo cp -r * /usr/
-    pip install pdfkit
-    pip install simplejson
+    sudo pip install pdfkit
+    sudo pip install simplejson
     ;;
   'FreeBSD')
     OS='FreeBSD'
