@@ -4,9 +4,9 @@ case $OS in
   'Linux')
     OS='Linux'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-    python get-pip.py
-    apt update
-    apt install wkhtmltopdf
+    sudo python get-pip.py
+    sudo apt update
+    sudo apt install wkhtmltopdf
     sudo apt-get install -y openssl build-essential xorg libssl-dev
     wget http://download.gna.org/wkhtmltopdf/0.12/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
     tar -xJf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
