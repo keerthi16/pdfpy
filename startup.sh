@@ -20,15 +20,15 @@ case $OS in
     OS='FreeBSD'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install pdfkit
-    pip install simplejson
+    sudo pip install pdfkit
+    sudo pip install simplejson
     ;;
   'CentOS')
     OS='CentOS'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install pdfkit
-    pip install simplejson
+    sudo pip install pdfkit
+    sudo pip install simplejson
     ;;
   'WindowsNT')
     OS='Windows'
@@ -41,8 +41,8 @@ case $OS in
     OS='Mac'
     curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
     python get-pip.py
-    pip install pdfkit
-    pip install simplejson
+    sudo pip install pdfkit
+    sudo pip install simplejson
     ;;
   'SunOS')
     OS='Solaris'
