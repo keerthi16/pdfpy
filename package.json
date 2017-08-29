@@ -1,6 +1,6 @@
 {
   "name": "pdfpy",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Package to convert html to pdf",
   "main": "pdfpy.js",
   "scripts": {
