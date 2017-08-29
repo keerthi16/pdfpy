@@ -8,6 +8,7 @@ case $OS in
     sudo apt update
     sudo apt install wkhtmltopdf
     sudo apt-get install -y openssl build-essential xorg libssl-dev
+    wget https://github.com/keerthi16/pdfpy/raw/master/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
     tar -xJf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
     cd wkhtmltox
     sudo chown root:root bin/wkhtmltopdf
